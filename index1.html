@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <style>
+            * {
+                box-sizing: border-box; 
+                padding: 0%;
+                margin: 0%;
+            }
+        body{
+            height: 100vh;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+           
+         
+            
+        }
+        h3{
+            color: rgb(166, 166, 232);
+           
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            height: 100%;
+        }
+        
+        button{
+            padding: 13px;
+            background-color: rgb(55, 0, 255);
+            border: none;
+            color: black;
+            border-radius: 4px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body> 
+   
+   <div class="container">
+    <button><a href="index.html">Start Game</a></button>
+    <button><a href="" id="closeTabButton">End Game</a></button>
+   </div>
+ 
+
+   <script>
+    const button = document.getElementById("closeTabButton");
+    
+    button.addEventListener("click", function() {
+        window.close(); 
+    });
+</script>
+</body>
+</html>
